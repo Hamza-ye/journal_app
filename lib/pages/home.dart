@@ -56,6 +56,7 @@ class _HomeState extends State<Home> {
 
   _buildListViewSeparated(AsyncSnapshot snapshot) {
     return ListView.separated(
+      padding: EdgeInsets.all(16.0),
       // itemBuilder: itemBuilder, separatorBuilder: separatorBuilder, itemCount: itemCount
       itemCount: snapshot.data.length,
       separatorBuilder: (context, index) => Divider(),
